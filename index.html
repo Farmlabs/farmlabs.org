@@ -81,19 +81,20 @@
         <br />
 
         <h4>Say Hi!</h4>
-        
-        <form>
+
+        <form action="https://formspree.io/dev@farmlabs.org"
+      method="POST">
           <div class="row">
             <div class="six columns">
               <label for="exampleEmailInput">Your email</label>
-              <input class="u-full-width" type="email" placeholder="email@here.com" id="exampleEmailInput">
+              <input class="u-full-width" type="email" placeholder="email@here.com" id="exampleEmailInput" name="_replyto">
             </div>
 
           </div>
           <label for="exampleMessage">Message</label>
-          <textarea class="u-full-width" placeholder="Hi! ..." id="exampleMessage"></textarea>
+          <textarea class="u-full-width" placeholder="Hi! ..." id="exampleMessage" name="message"></textarea>
 
-          <button type="submit" class="button-primary"><i class="fa fa-envelope"></i> Send </button>
+          <button type="submit" class="button-primary" value="Send"><i class="fa fa-envelope"></i> Send </button>
           <!---<input class="button-primary" type="submit" value="Submit">-->
         </form>
 
