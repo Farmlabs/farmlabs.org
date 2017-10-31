@@ -8,6 +8,8 @@
   transition: opacity 800ms;
   visibility: hidden;
   opacity: 0;
+  display: block !important;
+
 }
 .overlay:target {
   visibility: visible;
@@ -15,13 +17,15 @@
 }
 
 .popup {
-  margin: 100px auto;
+  margin: 80px auto;
   padding: 60px;
-  background: url("images/Graphics1.svg");
+  background-color:rgba(4, 75, 80, 0.7);
   border-radius: 5px;
-  width: 45%;
+  width: 70%;
   position: relative;
   transition: all 5s ease-in-out;
+
+
 }
 
 .popup h2 {
@@ -29,6 +33,25 @@
   color: #fff;
   font-family: "Questrial", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+
+.popup h3 {
+  margin-top: 0;
+  color: #fff;
+  font-family: "Questrial", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.popup p {
+  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-top: 0;
+  color: #fff;
+font-size: 100%;}
+
+.popup a {
+  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-top: 0;
+  color: #fff;
+font-size: 100%;}
+
 .popup .close {
   position: absolute;
   top: 20px;
@@ -39,10 +62,12 @@
   text-decoration: none;
   color: #333;
 }
+
 .popup .close:hover {
   color: #06D85F;
 }
 .popup .content {
   max-height: 30%;
-  overflow: auto;
+  overflow-y: initial !important;
+
 }
