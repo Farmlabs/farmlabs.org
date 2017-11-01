@@ -57,6 +57,12 @@
   color: #fff;
 font-size: 100%;}
 
+.popup li {
+  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-top: 0;
+  color: #fff;
+font-size: 80%;}
+
 .popup a {
   font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-top: 0;
