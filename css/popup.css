@@ -8,7 +8,8 @@
   transition: opacity 800ms;
   visibility: hidden;
   opacity: 0;
-  display: block !important;
+  overflow-y: scroll;
+
 
 }
 .overlay:target {
@@ -19,11 +20,15 @@
 .popup {
   margin: 80px auto;
   padding: 60px;
-  background-color:rgba(4, 75, 80, 0.7);
+
+  background: -moz-linear-gradient(rgba(4, 75, 80, 0.7), rgba(30, 97, 99, 0.9));
+	background: -webkit-linear-gradient(rgba(4, 75, 80, 0.7), rgba(30, 97, 99, 0.9));
+	background: -o-linear-gradient(rgba(4, 75, 80, 0.7), rgba(30, 97, 99, 0.9));
   border-radius: 5px;
   width: 70%;
   position: relative;
   transition: all 5s ease-in-out;
+  display: block !important;
 
 
 }
@@ -35,6 +40,12 @@
 }
 
 .popup h3 {
+  margin-top: 0;
+  color: #fff;
+  font-family: "Questrial", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.popup h5 {
   margin-top: 0;
   color: #fff;
   font-family: "Questrial", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -57,17 +68,17 @@ font-size: 100%;}
   top: 20px;
   right: 30px;
   transition: all 200ms;
-  font-size: 30px;
+  font-size: 50px;
   font-weight: bold;
   text-decoration: none;
-  color: #333;
+  color: #fff;
 }
 
 .popup .close:hover {
-  color: #06D85F;
+  color: rgba(30, 97, 99, 1);
 }
 .popup .content {
   max-height: 30%;
-  overflow-y: initial !important;
+  overflow-y: scroll;
 
 }
